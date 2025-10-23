@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "../../.."
+		},
+		{
+			"path": "../../../../../CABATINGAN_SOURCECPDE"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "KLAS"
+	}
+}

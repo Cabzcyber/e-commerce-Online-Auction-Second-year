@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SETTINGS</title>
+    <link rel="icon" type="image/png" href="./img/LOGO-removebg-preview (1).png">
+
+    <link rel="stylesheet" type="text/css" href="./style/settings.css">
+    <link rel="stylesheet" type="text/css" href="./style/main.css">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amaranth:ital,wght@0,400;0,700;1,400;1,700&family=Roboto+Flex:opsz,wght@8..144,100..1000&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <!------------------HEADER------------------->
+    <div class="header">
+        <div class="header_margin-section">
+            <div class="header_container">
+                <div class="header_Logo">
+                    <img src="./img/LOGO-removebg-preview (1).png" alt="logo">
+                    <div class="header_text">
+                        <h2>THE KLAS</h2>
+                        <p class="tagline">Keeping Legendary Art Seeker’s Dreams!</p>
+                        <p class="subtext">Art Online Auction</p>
+                    </div>
+                </div>
+                <div class="header_nav">
+                    <a id="index" href="./index.html">HOME</a> 
+                    <a id="auction" href="./auction.html">AUCTION</a>
+                    <a id="bidding" href="./bidding.html">MY BID</a>
+                    <a id="about" href="./about.html">ABOUT US </a>
+                    <a id="contact" href="./contact.html">CONTACT US</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="main">
+        <div class="main_margin-section">
+            <div class="main_container">
+                <div class="main_header">
+                    <div class="info_container">
+                        <div class="topbar">
+                            <input type="text" class="search-bar" placeholder="Search...">
+                            <div class="icons">
+                                <a href="UserDashboard.html" class="icon-link" title="Personal Info">
+                                <img src="img/Vector.png" alt="Personal Info" class="icon" id="personal-info"></a>
+                                <a href="notifications.html" class="icon-link" title="Notifications">
+                                <img src="img/Vector (1).png" alt="Notifications" class="icon" id="notification"></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="userDashboard">
+                        <div class="user-container">
+                            
+                            <div class="info-box"> 
+                                <div class="picture">
+
+                                    <img id="profile-img" src="./img/image1.jpg" alt="Profile" class="profile-img">
+
+                                </div>
+                                <p class="profile-name"><b>LukiChie Cabales</b></p>
+                            </div>
+
+
+
+                            <div class="Bio">
+                                <textarea name="bio" class="bio-display" id="bio-display" placeholder="Bio"></textarea>
+                            </div>
+                            <div class="bids-container">
+                                <div class="MyBid">
+                                    <a href="./UserDashboard.html" id="won-bid"><img src="./img/won.jpg" alt="" class="icon-bid"><span>Won Auction</span></a>
+                                    <a href="./transaction.html" id="transaction"><img src="./img/Windows.jpg" alt="" class="icon-bid"><span>Transactions</span></a>
+                                    <a href="./settings.html" id="settings"><img src="./img/icon.jpg" alt="" class="icon-bid"><span>Settings</span></a>
+                                    <a href="./help.html" id="help"><img src="./img/Help circle.jpg" alt="" class="icon-bid"><span>Help</span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="information">
+                        <div class="information-container">
+                            <div class="information-box">
+                                <form action="" class="personal-information" id="personal-info-form">
+                                    
+                                    <div class="profile-picture-container">
+                                        <img id="profile-img" src="./img/image1.jpg" alt="Profile" class="profile-img">
+
+                                        <input type="file" id="upload-profile" accept="image/*" class="upload-input">
+                                        <label for="upload-profile" class="camera-icon-label">
+                                          <img src="./img/Group 97.png" alt="Change Picture" class="camera-icon">
+                                        </label>
+                                      </div>
+                                    <div class="info-fill">
+                                        <div class="input-forms">
+                                            <label for="username" class="info">Username:</label>
+                                            <input type="text" name="username" id="username" class="hidden-input">
+                                        </div>
+                                        <div class="input-forms">
+                                            <label for="fname" class="info">First Name:</label>
+                                            <input type="text" name="fname" id="fname" class="hidden-input">
+                                        </div>
+                                        <div class="input-forms">
+                                            <label for="lname" class="info">Last Name:</label>
+                                            <input type="text" name="lname" id="lname" class="hidden-input">
+                                        </div>
+                                        <div class="input-forms">
+                                            <label for="sex" class="info">Sex:</label>
+                                            <input type="text" name="sex" id="sex" class="hidden-input">
+                                        </div>
+                                        <div class="input-forms">
+                                            <label for="age" class="info">Age:</label>
+                                            <input type="number" name="age" id="age" class="hidden-input">
+                                        </div>
+                                        <div class="input-forms">
+                                            <label for="dob" class="info">Date of Birth:</label>
+                                            <input type="date" name="dob" id="dob" class="hidden-input">
+                                        </div>
+                                        <div class="input-forms">
+                                            <label for="email" class="info">Email:</label>
+                                            <input type="email" name="email" id="email" class="hidden-input">
+                                        </div>
+                                        <div class="input-forms">
+                                            <label for="phone_number" class="info">Phone Number:</label>
+                                            <input type="number" name="phone_number" id="phone_number" class="hidden-input">
+                                        </div>
+                                    </div>
+                                    <div class="setting-bio">
+                                        <p>Bio:</p>
+                                        <textarea name="bio" id="bio-input" placeholder="Bio" class=""></textarea>
+                                        <div class="char-counter" id="char-counter">0/500</div>
+                                    </div>
+                                    <div class="change-information">
+                                        <button type="button" class="change-button" id="rename-button">
+                                            <img src="./img/rename.jpg" alt="">
+                                        </button>
+                                        <button type="submit" id="save-button">Save</button>
+                                    </div>
+                                </form>
+                            </div> 
+                            <div class="address" style="clear: both;"> 
+                                <div class="address-information">
+                                    <h2>Shipping Address Info</h2>
+                                    <form action="" class="address-form" id="address-form">
+                                             <div class="address-fill">
+                                            <div class="input-forms">
+                                                <label for="address" class="info">Address:</label>
+                                                <input type="text" name="address" id="address" class="hidden-input">
+                                            </div>
+                                            <div class="input-forms">
+                                                <label for="city" class="info">City:</label>
+                                                <input type="text" name="city" id="city" class="hidden-input">
+                                            </div>
+                                            <div class="input-forms">
+                                                <label for="state" class="info">State:</label>
+                                                <input type="text" name="state" id="state" class="hidden-input">
+                                            </div>
+                                            <div class="input-forms">
+                                                <label for="country" class="info">Country:</label>
+                                                <input type="text" name="country" id="country" class="hidden-input">
+                                            </div>
+                                            <div class="input-forms">
+                                                <label for="zip_code" class="info">Zip Code:</label>
+                                                <input type="number" name="zip_code" id="zip_code" class="hidden-input">
+                                            </div>
+                                        </div>
+                                        <div class="change-address">
+                                            <button type="button" id="address-edit-button"><img src="./img/rename.jpg" alt=""></button>
+                                            <button type="submit" id="save-address-button">Save </button>
+                                        </div>
+                                    </form>
+                                    </div>
+                                </div>
+                                <div class="logout-container">
+                                    <div class="logout-box">
+                                        <a href="./landing.html" class="logout-button">Log Out</a>
+                                    </div>
+                                </div>
+                                        	
+
+                                </div>
+                            </div>
+                        </div>
+                       
+                    </div>
+                      </div>
+                  </div>
+              </div>
+              <hr>
+
+    <div class="footer">
+        <div class="footer_margin secttion">
+            <div class="footer-container">
+                <div class="main_footer">                    
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+<script src="./function/settings.js"></script>
+<script src="./function/rename.js"></script>
+<script src="./function/ChangeProfile.js"></script>
+<script src="./function/address.js"></script>
+
+</body>
+</html>
+

@@ -1,0 +1,140 @@
+
+document.addEventListener('DOMContentLoaded', function() {
+    // Get the modal element
+    var modal = document.getElementById('regisModal');
+
+    // Get the button that opens the modal
+    var registerButton = document.querySelector('.register');
+
+    // Get the <span> element that closes the modal
+    var closeButton = document.querySelector('.close');
+
+    // When the user clicks the button, open the modal
+    registerButton.addEventListener('click', function(event) {
+        event.preventDefault(); // Prevent the default link behavior
+        modal.style.display = 'block';
+    });
+
+    // When the user clicks on <span> (x), close the modal
+    closeButton.addEventListener('click', function() {
+        modal.style.display = 'none';
+    });
+
+    // When the user clicks anywhere outside of the modal, close it
+    window.addEventListener('click', function(event) {
+        if (event.target === modal) {
+            modal.style.display = 'none';
+        }
+    });
+});
+
+<div id="regisModal" class="modal">
+                        <div class="modal-content">
+                        <p class="modaltext">You're all set Start exploring auctions now.</p>
+                        <img src="./img/images/Modalafterregistration.png" alt="Women Mix" class="modal-image">
+                        <div class="rowbtn">
+
+                            <a href="./index.html"><button class="proceed-to-checkout">Go to Home</button></a>
+                        </div>
+                        </div>
+                        </div>
+
+
+
+form.artwork-container .art-container .row-column1,
+form.artwork-container .art-container .row-column2,
+form.artwork-container .art-container .row-column3 {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+form.artwork-container .art-container .rowsize {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin: 0;
+}
+
+form.artwork-container .art-container .rowsize label {
+    min-width: 80px;
+    font-weight: 500;
+    color: #333;
+}
+
+form.artwork-container .art-container .rowsize select {
+    flex: 1;
+    padding: 8px 12px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    background-color: #fff;
+    font-size: 14px;
+    color: #333;
+    cursor: pointer;
+    transition: border-color 0.3s ease;
+}
+
+form.artwork-container .art-container .rowsize select:hover {
+    border-color: #38C838;
+}
+
+form.artwork-container .art-container .rowsize select:focus {
+    outline: none;
+    border-color: #38C838;
+    box-shadow: 0 0 0 2px rgba(56, 200, 56, 0.2);
+}
+
+
+<div class="later2modal">
+      <div class="modalform-2container">
+        <div class="innerform-container">
+          <div class="firstshipform">
+            <form>
+              <div class="rowshipform1">
+                <label>Starting Bid</label>
+                <input type="number" id="auctionname1"  name="auctionname" placeholder=" 00,000.00" value="200000" min="200000" step="1000">
+                <div class="bid-input1">
+                  <button class="bid-increase" title="bidincre"><img src="../ICONS/plus auction modal.png" class="plusicon"></button>
+                </div>
+              </div>
+              <div class="rowshipform">
+                <label>Highest Bid</label>
+                <input type="number" id="auctionname2" name="auctionname" placeholder=" 00,000.00" value="200000" min="200000" step="1000">
+                <div class="bid-input2">
+                  <button class="bid-increase" title="bidincre"><img src="../ICONS/plus auction modal.png" class="plusicon"></button>
+                </div>
+              </div>
+              <div class="rowshipform2">
+                <label>Shipping Fee</label>
+                <input type="number" id="shipauctionname" name="Shipping_Fee" placeholder=" 00,000.00" value="200000" min="200000" step="1000">
+                <div class="bid-input3">
+                  <button class="bid-increase" title="bidincre"><img src="../ICONS/plus auction modal.png" class="plusicon"></button>
+                </div>
+              </div>
+              <div class="rowspayment">
+                <label  >Payment Method</label>
+                <select>
+                  <option>Cash on Delivery</option>
+                  <option>Paypal</option>
+                </select>
+              </div>
+            </form>
+            <img src="../ICONS/rename.png" alt="Edit Auction" class="editauctionimage">
+          </div>
+        </div>
+      </div>
+      <div class="modalrowbutton">
+        <div>
+          <button class="cancelbtn">Cancel</button>
+        </div>
+        <div>
+          <button class="placebtn" id="saveEditAuctionBtn">Save Changes</button>
+        </div>
+      </div>
+    </div>
+
+
+    in this image UI isent and refenrece code below to edit 
+apply the context
+
+when the user click the Upload image  i want  an js function same process of function from the localstorage file  that i can 3 upload images and in that upload it stores in the mysql db and in uploading theres another button for delete which functions to delete the images uploaded starting from main image display and next is the carousel img that deletes it and apply php and js to execute this from the file @from auction upload php and auctionmodal.js  and for the db stroing the db i have added column from the auction table to be store which is the image_path1,image_path1image_path1@/database/ 

@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>USER</title>
+
+    <link rel="stylesheet" type="text/css" href="./style/login.css">
+    <link rel="stylesheet" type="text/css" href="./style/main.css">
+    <link rel="stylesheet" type="text/css" href="./style/footer.css">
+
+    <link rel="icon" type="image/png" href="./img/LOGO-removebg-preview (1).png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amaranth:ital,wght@0,400;0,700;1,400;1,700&family=Roboto+Flex:opsz,wght@8..144,100..1000&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <script src="https://www.gstatic.com/firebasejs/9.1.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.1.0/firebase-auth.js"></script>
+    <script src="./function/login.js"></script>
+    
+</head>
+<body>
+    <div class="header">
+        <div class="header_margin-section">
+            <div class="header_container">
+                <div class="header_Logo">
+                    <img src="./img/LOGO-removebg-preview (1).png" alt="logo">
+                    <div class="header_text">
+                        <h2>THE KLAS</h2>
+                        <p class="tagline">Keeping Legendary Art Seeker’s Dreams!</p>
+                        <p class="subtext">Art Online Auction</p>
+                    </div>
+                </div>
+                <div class="header_nav">
+                    <a id="index" href="./index.html">HOME</a> 
+                    <a id="auction" href="./auction.html">AUCTION</a>
+                    <a id="bidding" href="./bidding.html">MY BID</a>
+                    <a id="about" href="./about.html">ABOUT US </a>
+                    <a id="contact" href="./contact.html">CONTACT US</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="main">
+        <div class="main_margin-section">
+            <div class="main_container">
+                <div class="main_header">
+                    <div class="welcome-section">
+                        <span>Welcome to THE KLAS!</span>
+                        <p class="taglines">Keeping Legendary Art Seeker’s Dreams!</p>
+                        <p class="subtitle">Art Online Auction</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="gallery">
+            <div class="image">
+                <a href="./img/image4.jpg" target="_blank">
+                    <img src="./img/image4.jpg" alt="Guitar Art">
+                </a>
+                <div class="description-image">🎸 Guitar Art - A masterpiece of musical expression.</div>
+            </div>
+            <div class="image image-center">
+                <a href="./img/image1.jpg" target="_blank">
+                    <img id="imgcenter" src="./img/image1.jpg" alt="Woman with Red Petals">
+                </a>
+                <div class="description-image">🌺 Woman with Red Petals - A story of beauty and mystery.</div>
+            </div>
+            <div class="image">
+                <a href="./img/image2.jpg" target="_blank">
+                    <img src="./img/image2.jpg" alt="Portrait Art">
+                </a>
+                <div class="description-image">🖼 Portrait Art - Capturing emotions through strokes.</div>
+            </div>
+        </div>
+        <div class="main_account">
+            <div class="account_margin-section">
+                <div class="account-container">
+                    <div class="account-content">
+                        <h5 class="login">Log In to Your Account</h5>
+                        <p class="selectmethod">Select Method to Log In:</p>
+                    </div>
+                    <div class="accounts">
+                        <div class="option Google-option"> 
+                            <a href="#" id="googleLoginBtn" class="google">
+                                <img src="./img/google-removebg-preview.png" alt="Google icon"> Google
+                            </a>
+                        </div>
+                        <div class="option Facebook-option"> 
+                            <a href="#" id="facebookLoginBtn" class="facebook">
+                                <img src="./img/facebook-removebg-preview.png" alt="Facebook icon"> Facebook
+                            </a>
+                        </div>
+                        <div class="option Apple-option"> 
+                            <a href="#" id="appleLoginBtn" class="apple">
+                                <img src="./img/apple-removebg-preview.png" alt="Apple icon"> Apple
+                            </a>  
+                        </div>                                             
+                    </div>
+                
+                    <!-- Include your auth.js file -->
+                    <script src="./function/login.js"></script>
+                    
+
+                    <div class="divider">
+                        <span>or continue with</span>
+                    </div>
+                    <div class="role-options">
+                        <a href="./login.html" class="for_user">User</a>
+                            <span class="separator">|</span>
+                        <a href="./admin.html" class="for_admin">Admin</a>
+                    </div>
+                    <form class="login-form" action="/login" method="POST">
+                        <div class="input-group">
+                            <i class="fas fa-envelope"></i>
+                            <input type="email" id="email" name="email" required placeholder="Email">
+                        </div>
+                        <div class="input-group">
+                            <i class="fas fa-lock"></i>
+                            <input type="password" id="password" name="password" required placeholder="Password">
+                        </div>
+                        <div class="form-options">
+                            <label class="remember-me">
+                                <input type="checkbox" name="remember">Remember Me
+                            </label>
+                            <a href="   /forgot-password" class="forgot-password">Forgot Password?</a>
+                        </div>
+                        <div class="login-button">
+                        <a href="./index.html" class="button-login">Login</a>
+                        </div>
+                    </form>
+                    <div class="create-account">Don’t have an account?
+                            <a href="./registration.html">Create Account</a>
+                    </div>
+                </div>
+                <div class="description">
+                    <p class="meaning">Discover, bid, and own breathtaking artwork from talented artists worldwide. THE KLAS, a KLASIFIED online auction platform connects collectors, enthusiasts, and creators in a seamless and secure bidding experience. Whether you're searching for contemporary masterpieces, classic paintings, or unique sculptures, our curated selection offers something for every art lover.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <hr>
+    <div class="footer">
+        <div class="footer_margin secttion">
+            <div class="footer-container">
+                <div class="main_footer">
+                    
+
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+       <script src="./function/login.js"></script>
+</body>
+</html>
+

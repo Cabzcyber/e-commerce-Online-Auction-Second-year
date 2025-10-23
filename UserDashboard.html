@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>USERDASHBOARD</title>
+    <link rel="icon" type="image/png" href="./img/LOGO-removebg-preview (1).png">
+
+    <link rel="stylesheet" type="text/css" href="./style/UserDashboard.css">
+    <link rel="stylesheet" type="text/css" href="./style/main.css">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amaranth:ital,wght@0,400;0,700;1,400;1,700&family=Roboto+Flex:opsz,wght@8..144,100..1000&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <!------------------HEADER------------------->
+    <div class="header">
+        <div class="header_margin-section">
+            <div class="header_container">
+                <div class="header_Logo">
+                    <img src="./img/LOGO-removebg-preview (1).png" alt="logo">
+                    <div class="header_text">
+                        <h2>THE KLAS</h2>
+                        <p class="tagline">Keeping Legendary Art Seeker's Dreams!</p>
+                        <p class="subtext">Art Online Auction</p>
+                    </div>
+                </div>
+                <div class="header_nav">
+                    <a id="index" href="./index.html">HOME</a> 
+                    <a id="auction" href="./auction.html">AUCTION</a>
+                    <a id="bidding" href="./bidding.html">MY BID</a>
+                    <a id="about" href="./about.html">ABOUT US </a>
+                    <a id="contact" href="./contact.html">CONTACT US</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="main">
+        <div class="main_margin-section">
+            <div class="main_container">
+                <div class="main_header">
+                    <div class="info_container">
+                        <div class="topbar">
+                            <input type="text" class="search-bar" placeholder="Search...">
+                            <div class="icons">
+                                <a href="UserDashboard.html" class="icon-link" title="Personal Info">
+                                <img src="img/Vector.png" alt="Personal Info" class="icon" id="personal-info"></a>
+                                <a href="notifications.html" class="icon-link" title="Notifications">
+                                <img src="img/Vector (1).png" alt="Notifications" class="icon" id="notification"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="userDashboard">
+                        <div class="user-container">
+                            <div class="info-box">
+                                <div class="picture">
+                                    <img id="profile-img" src="./img/image1.jpg" alt="Profile" class="profile-img">
+                                </div>
+                                <p class="profile-name"><b>LukiChie Cabales</b></p>
+                            </div>
+                            <div class="Bio">
+                                <textarea name="bio" class="bio-display" id="bio-display" placeholder="Bio"></textarea>
+                            </div>
+                            <div class="bids-container">
+                                <div class="MyBid">
+                                    <a id="won-bid"><img src="./img/won.jpg" alt="" class="icon-bid"><span>Won Auction</span></a>
+                                    <a id="transaction"><img src="./img/Windows.jpg" alt="" class="icon-bid"><span>Transactions</span></a>
+                                    <a id="settings"><img src="./img/icon.jpg" alt="" class="icon-bid"><span>Settings</span></a>
+                                    <a id="help"><img src="./img/Help circle.jpg" alt="" class="icon-bid"><span>Help</span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Add main-content container for dynamic content -->
+    <div class="main-content">
+        <!-- Won Auction Section -->
+        <div id="section-won-bid">
+            <div class="choose-options">
+                <select title="option-chooses" class="options">
+                    <option value="newest">Newest</option>
+                    <option value="ending">Ending Soon</option>
+                </select>
+            </div>
+            <div class="won-bid-container">
+                <div class="won-bid-content">
+                    <div class="won-bid-box">
+                        <div class="won-bid-image">
+                            <img src="./AUCTION_to_BID/PAINTING/5.jpg" alt="Art Piece">
+                        </div>
+                        <div class="won-bid-details">
+                            <p class="title">Title of the Art Piece</p>
+                            <p class="artist">By Sams Kie</p>
+                            <p class="size">49x12</p>
+                            <p class="bid_category">Category: Print</p>
+                            <p class="current_bid">Your Current Bid: $5000</p>                                           
+                        </div>
+                        <div class="status">
+                            <div class="status-container">
+                                <p class="won">Won Auction</p> 
+                            </div>
+                        </div>
+                        <div id="time-status">
+                            <span class="status-time">Auction Ended</span>
+                        </div>
+                        <div class="view-btn">
+                            <a href="./auctionbid.html">
+                                <button title="auctionbutton" class="view-auction">View Auction</button>
+                            </a>
+                            <a href="./checkoutsummary.html">
+                                <button title="checkoutbutton" class="view-checkout">View Checkout</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Transactions Section -->
+        <div id="section-transaction" style="display:none;">
+            <div class="choose-options">
+                <select class="options">
+                    <option value="newest">Newest</option>
+                    <option value="ending">Ending Soon</option>
+                </select>
+            </div>
+            <div class="transaction-bid-container">
+                <div class="transaction-bid-content">
+                    <div class="transaction-bid-box">                                   
+                        <div class="transaction-bid-image">
+                            <img src="./AUCTION_to_BID/PAINTING/5.jpg" alt="Art Piece">
+                        </div>
+                        <div class="transaction-bid-details">
+                            <p class="title">Title of the Art Piece</p>
+                            <p class="artist">By Sams Kie</p>
+                            <p class="size">49x12</p>
+                            <p class="bid_category">Category: Print</p>
+                            <p class="current_bid">₱200,000 - 200,000</p>                                           
+                        </div>
+                        <div class="status">
+                            <div class="status-container">
+                                <p class="transaction-status" id="complete">Completed</p> 
+                            </div>
+                        </div>
+                        <div id="time-status">
+                            <span class="status-time">Ended 00:00:00</span>
+                        </div>
+                        <div class="view-btn">
+                            <a href="./contact.html"><button class="view-auction">Contact Seller</button></a>  
+                            <a href="./checkout.html"><button class="view-checkout">View Checkout</button></a>
+                        </div>
+                    </div>
+                <div class="transaction-bid-box">
+
+                    <div class="transaction-bid-image">
+                        <img src="./AUCTION_to_BID/PAINTING/3.jpg" alt="Art Piece">
+                    </div>
+                    <div class="transaction-bid-details">
+                        <p class="title">Title of the Art Piece</p>
+                        <p class="artist">By Sams Kie</p>
+                        <p class="size">49x12</p>
+                        <p class="bid_category">Category: Print</p>
+                        <p class="current_bid">₱100,000 - 200,000<p>                                           
+                    </div>
+                    <div class="status">
+                        <div class="status-container">
+                            <p class="transaction-status" id="pending">Pending</p> 
+                        </div>
+                    </div>
+                    <div id="time-status">
+                        <span class="status-time">Ended 00:00:00</span>
+                    </div>
+                    <div class="view-btn">
+                        <a href="./contact.html"><button class="view-auction">Contact Seller</button></a>  
+                        <a href="./checkout.html"><button class="view-checkout">View Checkout</button></a>
+                        </div>
+                </div>
+    
+                <div class="transaction-bid-box">
+                    <div class="transaction-bid-image">
+                        <img src="./AUCTION_to_BID/PAINTING/2.jpg" alt="Art Piece">
+                    </div>
+                    <div class="transaction-bid-details">
+                        <p class="title">Title of the Art Piece</p>
+                        <p class="artist">By Sams Kie</p>
+                        <p class="size">49x12</p>
+                        <p class="bid_category">Category: Print</p>
+                        <p class="current_bid">₱100,000 - 200,000<p>                                           
+                    </div>
+                    <div class="status">
+                        <div class="status-container">
+                            <p class="transaction-status" id="failed">Failed</p> 
+                        </div>
+                    </div>
+                    <div id="time-status">
+                        <span class="status-time">Ended 00:00:00</span>
+                    </div>
+                    <div class="view-btn">                                           
+                        <a href="./contact.html"><button class="view-checkout">Contact Seller</button></a>             
+                    </div>                                                              
+                </div>
+            </div>
+            
+        </div>
+    </div>
+        <!-- Settings Section -->
+        <div id="section-settings" style="display:none;">
+            <div class="information">
+                <div class="information-container">
+                    <div class="information-box">
+                        <form action="" class="personal-information" id="personal-info-form">
+                            <div class="profile-picture-container">
+                                <img id="profile-img" src="./img/image1.jpg" alt="Profile" class="profile-img">
+                                <input type="file" id="upload-profile" accept="image/*" class="upload-input">
+                                <label for="upload-profile" class="camera-icon-label">
+                                    <img src="./img/Group 97.png" alt="Change Picture" class="camera-icon">
+                                </label>
+                            </div>
+                            <div class="info-fill">
+                                <div class="input-forms">
+                                    <label for="username" class="info">Username:</label>
+                                    <input type="text" name="username" id="username" class="hidden-input">
+                                </div>
+                                <div class="input-forms">
+                                    <label for="fname" class="info">First Name:</label>
+                                    <input type="text" name="fname" id="fname" class="hidden-input">
+                                </div>
+                                <div class="input-forms">
+                                    <label for="lname" class="info">Last Name:</label>
+                                    <input type="text" name="lname" id="lname" class="hidden-input">
+                                </div>
+                                <div class="input-forms">
+                                    <label for="sex" class="info">Sex:</label>
+                                    <input type="text" name="sex" id="sex" class="hidden-input">
+                                </div>
+                                <div class="input-forms">
+                                    <label for="age" class="info">Age:</label>
+                                    <input type="number" name="age" id="age" class="hidden-input">
+                                </div>
+                                <div class="input-forms">
+                                    <label for="dob" class="info">Date of Birth:</label>
+                                    <input type="date" name="dob" id="dob" class="hidden-input">
+                                </div>
+                                <div class="input-forms">
+                                    <label for="email" class="info">Email:</label>
+                                    <input type="email" name="email" id="email" class="hidden-input">
+                                </div>
+                                <div class="input-forms">
+                                    <label for="phone_number" class="info">Phone Number:</label>
+                                    <input type="number" name="phone_number" id="phone_number" class="hidden-input">
+                                </div>
+                            </div>
+                            <div class="setting-bio">
+                                <p>Bio:</p>
+                                <textarea name="bio" id="bio-input" placeholder="Bio" class=""></textarea>
+                                <div class="char-counter" id="char-counter">0/500</div>
+                            </div>
+                            <div class="change-information">
+                                <button type="button" class="change-button" id="rename-button">
+                                    <img src="./img/rename.jpg" alt="">
+                                </button>
+                                <button type="submit" id="save-button">Save</button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="address" style="clear: both;"> 
+                        <div class="address-information">
+                            <h2>Shipping Address Info</h2>
+                            <form action="" class="address-form" id="address-form">
+                                     <div class="address-fill">
+                                    <div class="input-forms">
+                                        <label for="address" class="info">Address:</label>
+                                        <input type="text" name="address" id="address" class="hidden-input">
+                                    </div>
+                                    <div class="input-forms">
+                                        <label for="city" class="info">City:</label>
+                                        <input type="text" name="city" id="city" class="hidden-input">
+                                    </div>
+                                    <div class="input-forms">
+                                        <label for="state" class="info">State:</label>
+                                        <input type="text" name="state" id="state" class="hidden-input">
+                                    </div>
+                                    <div class="input-forms">
+                                        <label for="country" class="info">Country:</label>
+                                        <input type="text" name="country" id="country" class="hidden-input">
+                                    </div>
+                                    <div class="input-forms">
+                                        <label for="zip_code" class="info">Zip Code:</label>
+                                        <input type="number" name="zip_code" id="zip_code" class="hidden-input">
+                                    </div>
+                                </div>
+                                <div class="change-address">
+                                    <button type="button" id="address-edit-button"><img src="./img/rename.jpg" alt=""></button>
+                                    <button type="submit" id="save-address-button">Save </button>
+                                </div>
+                            </form>
+                            </div>
+                        </div>
+                    <div class="logout-container">
+                        <div class="logout-box">
+                            <a href="./landing.html" class="logout-button">Log Out</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Help Section -->
+        <div id="section-help" style="display:none;">
+            <div class="once_help">
+                <div class="help-container">                
+                    <div class="help-content">
+                        <div class="rules_regulations">
+                            <span>Bid Rules and Regulations</span>
+                        </div> 
+                    </div>
+                </div>
+            <div>                      
+            <div class="rules-container">
+                <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc odio ex, rutrum vitae porta vel, commodo sed tortor. Donec tincidunt urna ac blandit condimentum. Sed a justo eget arcu sodales aliquam. Nulla in maximus elit. Donec a ex varius purus ultrices cursus. Nullam scelerisque             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc odio ex, rutrum vitae porta vel, commodo sed tortor. Donec tincidunt urna ac blandit condimentum. Sed a justo eget arcu sodales aliquam. Nulla in maximus elit. Donec a ex varius purus ultrices cursus. Nullam scelerisque
+                </p>
+            </div>
+            </div>
+            </div>
+            <!--  -->
+            <div class="twice_help">
+                <div class="warranties-container">                
+                    <div class="warranties-content">
+                        <div class="warranties_disclaimer">
+                            <span>Warranties and Disclaimer</span>
+                        </div> 
+                    </div>
+                </div>
+            <div>                      
+            <div class="disclaimer-container">
+                     <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc odio ex, rutrum vitae porta vel, commodo sed tortor. Donec tincidunt urna ac blandit condimentum. Sed a justo eget arcu sodales aliquam. Nulla in maximus elit. Donec a ex varius purus ultrices cursus. Nullam scelerisque             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc odio ex, rutrum vitae porta vel, commodo sed tortor. Donec tincidunt urna ac blandit condimentum. Sed a justo eget arcu sodales aliquam. Nulla in maximus elit. Donec a ex varius purus ultrices cursus. Nullam scelerisque
+                     </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="footer">
+    <div class="footer_margin secttion">
+        <div class="footer-container">
+            <div class="main_footer">                    
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+    <script src="./function/ChangeProfile.js"></script>
+    <script src="./function/try.js"></script>
+    <script src="./function/rename.js"></script>
+    <script src="./function/dashboard.js"></script>
+    <script src="./function/address.js"></script>
+</body>
+</html>
+

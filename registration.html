@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>THE KLAS</title>
+  <link rel="icon" type="image/png" href="./img/LOGO-removebg-preview (1).png">
+  <link rel="stylesheet" type="text/css" href="./style/registration.css">
+
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Amaranth:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet"> 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto+Flex:opsz,wght@8..144,100..1000&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+   <!------------------HEADER------------------->
+   <div class="header">
+    <div class="header_margin-section">
+        <div class="header_container">
+            <div class="header_Logo">
+                <img src="./img/LOGO-removebg-preview (1).png" alt="logo">
+                <div class="header_text">
+                    <h2>THE KLAS</h2>
+                    <p class="tagline">Keeping Legendary Art Seeker's Dreams!</p>
+                    <p class="subtext">Art Online Auction</p>
+                </div>
+            </div>
+            <div class="header_nav">
+                <a id="index" href="./index.html">HOME</a> 
+                <a href="./auction.html">AUCTION</a>
+                <a href="./bidding.html">MY BID</a>
+                <a href="./about.html">ABOUT US </a>
+                <a href="./contact.html">CONTACT US</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!------------------HEADER------------------->
+<!------------------REGISTRATION------------------->
+              <div class="main">
+                <div class="main_margin-section">
+                    <div class="main_container">
+                  <div class="registration_container">
+                  <div class="registration_imagecontainer">
+                    <img class="registrationpicture" src="./img/images/Registration Pic.png" alt="Registration Image">
+                  </div>   
+                  <div class="registration_formcontainer">
+                  
+                <section class="registration_section">
+                  <div class="registration_header">
+                    <h1>Create An Account</h1>
+                  </div>
+                <form id="registrationForm" class="registration_form" method="POST" action="backendphp/register.php">
+                    <div class="row">
+                    <div class="input-box">
+                    <input type="text" name="firstname" placeholder="First Name"  required> 
+                    </div>
+                    <div class="input-box">
+                        <input type="text" name="lastname" placeholder="Last Name" required> 
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-box">
+                            <input type="text" name="username" placeholder="Username" required> 
+                                      </div>
+                        <div class="input-box">
+                            <input type="text" name="phone" placeholder="Phone Number" required> 
+                            </div>
+                        </div>
+            
+                            <div class="row">
+                            <div class="input-box">
+                                <input type="email" name="email" placeholder="Email Address" required> 
+                                </div>
+                                <div class="input-box">
+                                    <input type="date" name="birthdate" required> 
+                                    </div>
+                                </div>
+            
+                                <div class="row1">
+                                    <div class="input-box">
+                              <input type="password" name="password" id="password" placeholder="Password" required>
+                              <i id="togglePassword" class="fa fa-eye toggle-password"></i> 
+                              </div>
+                              <div class="gender-box">
+                                  <div class="gender-option">
+                                    <div class="gender"> 
+                                      <input type="radio" id="check-male" name="gender" value="Male" required>
+                                      <label for="check-male">Male</label>
+                                    </div>
+                                    <div class="gender">
+                                      <input type="radio" id="check-female" name="gender" value="Female" required>
+                                      <label for="check-female">Female</label>
+                                    </div>
+                                    <div class="gender">
+                                      <input type="radio" id="check-others" name="gender" value="Others" required>
+                                      <label for="check-others">Others</label>
+                                    </div>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="input-boxaddrress">
+                            <input type="text" name="address" placeholder="Full Address" required> 
+                            </div>
+                            <div class="row">
+                              <div class="input-box">
+                                  <input type="text" name="city" placeholder="City" required> 
+                                  </div>
+                                  <div class="input-box">
+                                      <input type="text" name="postal_code" placeholder="Postal Code" required> 
+                                      </div>
+                                  </div>
+                                  <div class="input-boxstate">
+                                    <input type="text" name="state" placeholder="State/Postal" required> 
+                                    </div>
+                                    <div class="check">
+                                      <input type="checkbox" id="check-agree" name="check" value="check" required>
+                                      <label for="check-agree" class="confirmation">
+                                          By checking this box, I confirm that I have read, understood, and agree to the 
+                                          <a href="page2.html">Privacy Policy</a> and <a href="page2.html">Terms of Service</a>.
+                                      </label>
+                                  </div>
+                                  <div class="button_container">
+                                    <button type="submit"  class="register" >Register</button>
+                                </div>
+                                <div>
+                                
+                                  <a class="already" href="page2.html"> Already have an account?</a>
+                                </div>
+                                </form>
+                                </section>
+                                  </div>
+                                  </div>
+                                <div id="regisModal" class="modal">
+                        <div class="modal-content">
+                        <p class="modaltext">You're all set Start exploring auctions now.</p>
+                        <img src="./img/images/Modalafterregistration.png" alt="Women Mix" class="modal-image">
+                        <div class="rowbtn">
+
+                            <a href="./index.html"><button class="proceed-to-checkout">Go to Home</button></a>
+                        </div>
+                        </div>
+                        </div>
+
+
+      </div>
+    </div>
+  </div>
+<script src="../IT223-ONLINE_AUCTION - Copyy/function/registrationtoggle.js"></script>
+
+</body>
+</html>

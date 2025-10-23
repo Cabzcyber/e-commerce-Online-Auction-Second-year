@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MY BID</title>
+    <link rel="icon" type="image/png" href="./img/LOGO-removebg-preview (1).png">
+    <link rel="stylesheet" type="text/css" href="./style/header.css">
+    <link rel="stylesheet" href="./style/bidding.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amaranth:ital,wght@0,400;0,700;1,400;1,700&family=Roboto+Flex:opsz,wght@8..144,100..1000&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="header">
+        <div class="header_margin-section">
+            <div class="header_container">
+                <div class="header_Logo">   
+                    <img src="./img/LOGO-removebg-preview (1).png" alt="logo">
+                    <div class="header_text">
+                        <h2>THE KLAS</h2>
+                        <p class="tagline">Keeping Legendary Art Seeker’s Dreams!</p>
+                        <p class="subtext">Art Online Auction</p>
+                    </div>
+                </div>
+                <div class="header_nav">
+                    <a id="index" href="./index.html">HOME</a> 
+                    <a id="auction" href="./auction.html">AUCTION</a>
+                    <a id="bidding" href="./bidding.html">MY BID</a>
+                    <a id="about" href="./about.html">ABOUT US </a>
+                    <a id="contact" href="./contact.html">CONTACT US</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="main">
+        <div class="main_margin-section">
+            <div class="main_container">
+                <div class="main_header">
+                    <div class="info_container">
+                        <div class="topbar">
+                            <input type="text" class="search-bar" placeholder="Search...">
+                            <div class="icons">
+                                <a href="./UserDashboard.html" class="icon-link" title="Personal Info">
+                                    <img src="img/Vector.png" alt="Personal Info" class="icon"></a>
+                                <a href="notifications.html" class="icon-link" title="Notifications">
+                                    <img src="img/Vector (1).png" alt="Notifications" class="icon"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bid-panel">
+                        <div class="info-box">
+                            <div class="picture">
+                                <img id="profile-img" src="./img/image1.jpg" alt="Profile" class="profile-img">
+                            </div>
+                            <p class="profile-name"><b>LukiChie Cabales</b></p>
+                        </div>
+                        <div class="bids-container">
+                            <div class="MyBid">
+                                <p class="my-bid">Bid Summary</p>
+                                <a id="highest-bid-link" class="sidebar-link"><img src="./img/highest.png" alt="" class="icon-bid"><span class="pointer">Highest Bid</span></a>
+                                <a id="outbid-link" class="sidebar-link"><img src="./img/outbid-removebg-preview.png" alt=""  class="icon-bid" ><span class="pointer">Outbid</span></a>
+                                <a id="won-bid-link" class="sidebar-link"><img src="./img/won.jpg" alt=""  class="icon-bid"><span class="pointer">Won Auction</span></a>
+                            </div>
+                        </div>    
+                    </div>
+                    <div class="choose-options">
+                        <select class="options">
+                            <option value="newest">Newest</option>
+                            <option value="ending">Ending Soon</option>
+                        </select>
+                    </div>
+                    <div class="highest_bid-container">
+                        <!-- Highest Bid Section -->
+                        <div id="highest-bid-section" class="bid-section">
+                            <div class="highest_bid-box">
+                                <div class="highest_bid-image">
+                                    <img src="./AUCTION_to_BID/CUBISM/2.jpg" alt="Art Piece">
+                                </div>
+                                <div class="highest_bid-details">
+                                    <p class="title">Title oasdfce</p>
+                                    <p class="artist">By Sams Kie</p>
+                                    <p class="size">49x12</p>
+                                    <p class="bid_category">Category: Print</p>
+                                    <p class="current_bid">Your Current Bid: $5000<p>                                           
+                                </div>
+                                <div class="status">
+                                    <div class="status-container">
+                                        <p class="highest">Highest Bid</p> 
+                                    </div>
+                                </div>                                        
+                                <div id="time-status">
+                                    <span class="status-time">01:45:10</span>
+                                </div>
+                                <a href="./auctionbid.html"><button class="bid-btn"><p>Bid Again</p></button></a>
+                            </div>
+                        </div>
+                        <!-- Outbid Section -->
+                        <div id="outbid-section" class="bid-section" style="display:none;">
+                            <div class="outbid-box">
+                                <div class="outbid-image">
+                                    <img src="./AUCTION_to_BID/PRINT/7.jpg" alt="Art Piece">
+                                </div>
+                                <div class="outbid-details">
+                                    <p class="title">Title of the Art Piece</p>
+                                    <p class="artist">By Sams Kie</p>
+                                    <p class="size">49x12</p>
+                                    <p class="bid_category">Category: Print</p>
+                                    <p class="current_bid">Your Current Bid: $5000<p>                                           
+                                </div>
+                                <div class="status">
+                                    <div class="status-container">
+                                        <p class="outbid">Outbid</p> 
+                                    </div>
+                                </div>
+                                <div id="time-status">
+                                    <span class="status-time">01:45:10</span>
+                                </div>
+                                <a href="./auctionbid.html"><button class="bid-btn"><p>Bid Again</p></button></a>
+                            </div>
+                            <div class="outbid-box">
+                                <div class="outbid-image">
+                                    <img src="./AUCTION_to_BID/DRAWING/2.jpg" alt="Art Piece">
+                                </div>
+                                <div class="outbid-details">
+                                    <p class="title">Title oasdfce</p>
+                                    <p class="artist">By Sams Kie</p>
+                                    <p class="size">49x12</p>
+                                    <p class="bid_category">Category: Print</p>
+                                    <p class="current_bid">Your Current Bid: $5000<p>                                           
+                                </div>
+                                <div class="status">
+                                    <div class="status-container">
+                                        <p class="outbid">Outbid</p> 
+                                    </div>
+                                </div>                                        
+                                <div id="time-status">
+                                    <span class="status-time">01:45:10</span>
+                                </div>
+                                <a href="./auctionbid.html"><button class="bid-btn"><p>Bid Again</p></button></a>
+                            </div>
+                        </div>
+                        <!-- Won Auction Section -->
+                        <div id="won-bid-section" class="bid-section" style="display:none;">
+                            <div class="won-bid-box">
+                                <div class="won-bid-image">
+                                    <img src="./AUCTION_to_BID/PAINTING/5.jpg" alt="Art Piece">
+                                </div>
+                                <div class="won-bid-details">
+                                    <p class="title">Title of the Art Piece</p>
+                                    <p class="artist">By Sams Kie</p>
+                                    <p class="size">49x12</p>
+                                    <p class="bid_category">Category: Print</p>
+                                    <p class="current_bid">Your Current Bid: $5000<p>                                           
+                                </div>
+                                <div class="status">
+                                    <div class="status-container">
+                                        <p class="won">Won Auction</p> 
+                                    </div>
+                                </div>
+                                <div id="time-status">
+                                    <span class="status-time">Auction Ended</span>
+                                </div>
+                                <div class="view-btn">                                           
+                                    <a href="./checkout.html"><button class="view-checkout"><p>View Checkout</p></button></a>
+                                    <a href="./auction.html"><button class="view-auction"><p>View Auction</p></button></a>                        
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>    
+        <div class="footer">
+            <div class="footer_margin secttion">
+                <div class="footer-container">
+                    <div class="main_footer">                    
+                    </div>
+                </div>
+            </div>
+        </div> 
+    </div>
+    <script src="./function/bidding.js"></script>
+</body>
+</html>
